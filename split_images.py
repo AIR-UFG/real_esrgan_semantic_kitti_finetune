@@ -6,7 +6,6 @@ import os
 
 def split_aux(splited_list):
     splited_array = np.array(splited_list)
-    # splited_array = splited_array.reshape(16, 1024)
     print(splited_array.shape)
     splited_array = splited_array.reshape(16, 256)  # Invert the dimensions
     img = Image.fromarray(splited_array)
