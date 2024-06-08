@@ -16,7 +16,7 @@ This repo contains the following files:
 
 * split_images.py -- This file is used to process and split images from 1024x16 to 256x16 dimension, setting the image with the right format for 4x upscaling.
 
-* weigths/net_g_latest.pth -- The weigth provided from the finetune of real-esrgan with semantic kitti dataset
+* weigths/net_g_latest.pth -- The weigth provided from the finetune of real-esrgan with semantic kitti dataset (https://drive.google.com/file/d/1B8iKdYACRmfTNgEd7FtWpCLHcTQemXUT/view?usp=sharing)
 
 ## Running The Code
 
