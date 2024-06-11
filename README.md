@@ -33,3 +33,13 @@ For inference existing models
     * put the pre-trained models (.pth files) in the <your_dir>/Real-ESRGAN-master/weights folder. You can take our pre-trained model from here.
 
 Open the Real_ESRGAN_architecture_finetune.ipynb file and from then you can run the code, needed explnations are in the notebook.
+
+## Results
+
+![Semantic Kitti Sequence 01 - frame 0054](results/frame_0054_reflectance.png)
+
+![ ](results/frame_0054_depth.png)
+
+![Semantic Kitti Sequence 01 - frame 0124](results/frame_0124_reflectance.png)
+
+![ ](results/frame_0124_depth.png)
