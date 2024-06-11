@@ -16,7 +16,7 @@ This repo contains the following files:
 
 * split_images.py -- This file is used to process and split images from 1024x16 to 256x16 dimension, setting the image with the right format for 4x upscaling.
 
-* weigths/net_g_latest.pth -- The weigth provided from the finetune of real-esrgan with semantic kitti dataset (https://drive.google.com/file/d/1B8iKdYACRmfTNgEd7FtWpCLHcTQemXUT/view?usp=sharing)
+* weigths/net_g_latest.pth -- The weigth provided from the finetune of real-esrgan with semantic kitti dataset. [Download link](https://drive.google.com/file/d/1B8iKdYACRmfTNgEd7FtWpCLHcTQemXUT/view?usp=sharing)
 
 ## Running The Code
 
@@ -32,7 +32,9 @@ For training
 For inference existing models
     * put the pre-trained models (.pth files) in the <your_dir>/Real-ESRGAN-master/weights folder. You can take our pre-trained model from here.
 
-Open the Real_ESRGAN_architecture_finetune.ipynb file and from then you can run the code, needed explnations are in the notebook.
+Open the Real_ESRGAN_architecture_finetune.ipynb file and from then you can run the code, needed explanations are in the notebook.
+
+For more information, check the [original repo](https://github.com/xinntao/Real-ESRGAN)
 
 ## Results
 
