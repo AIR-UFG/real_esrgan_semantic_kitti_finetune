@@ -36,15 +36,28 @@ Open the Real_ESRGAN_architecture_finetune.ipynb file and from then you can run 
 
 For more information, check the [original repo](https://github.com/xinntao/Real-ESRGAN)
 
+## Image Quality Metrics 
+- **SSIM (Structural Similarity Index)**: Evaluates the structural similarity between two images, ranging from -1 to 1, where 1 indicates identical images.
+  
+- **PSNR (Peak Signal-to-Noise Ratio)**: Metric that quantifies the relationship between the maximum signal of an image and the noise that affects image quality, calculates the mean squared error (MSE) between two images.
+   - **High PSNR** values above 40 dB indicate visually imperceptible differences between the compared images. Values above 30 dB, generally indicates that the reconstructed image is very similar to the original image. Typically, is considered good quality, especially for 8-bit per channel images (Grayscale images). 
+   - **Medium PSNR** values in range of 20 to 30 dB, suggests that there are some noticeable differences between the images, but the quality can be considered acceptable for some applications where visual precision is not critical, but it begins to show visible artifacts.
+   - **Low PSNR** values below 20 dB indicates significant degradation in the quality of the reconstructed image.
+
 ## Results
+To compare the upscaled images with the original high-resolution images:
+
+|Image|Type|PSNR [dB]|SSIM|
+|---|---|---|---|
+|frame\_000054|depth|31\.604999152457196|0\.5728766932379483|
+|frame\_000054|reflectance|29\.553471275023284|0\.25243974738916874|
+|frame\_000124|depth|32\.09953274479659|0\.6007756677374365|
+|frame\_000124|reflectance|28\.97276405985234|0\.20493032328551053|
 
 ### Semantic Kitti Sequence 01 - frame 0054
 ![ ](results/frame_0054_reflectance.png)
-
 ![ ](results/frame_0054_depth.png)
 
 ### Semantic Kitti Sequence 01 - frame 0124
-
 ![ ](results/frame_0124_reflectance.png)
-
 ![ ](results/frame_0124_depth.png)
